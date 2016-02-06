@@ -20,9 +20,10 @@ public class CoseerTestTask {
         InvoiceMaker i=new InvoiceMaker();
         i.setLineDelimiter(InvoiceMaker.CHAT_LINE_DELIMITER);
         try{
-        i.getTranscriptsFromRTF(new File(
-                "C:\\Users\\dkosyakov\\Desktop\\IT\\TestTasks\\coseer\\Project\\Sanitized3.rtf"));
-        } catch (Exception e){System.out.println(e);}
+        i.makeJSONinvoice(i.parseTranscripts(i.getTranscriptsFromRTF(new File(
+                //put your path here
+                "C:\\Users\\dkosyakov\\Desktop\\IT\\TestTasks\\coseer\\Project\\Sanitized7.rtf"))));
+        } catch (Exception e){e.printStackTrace();}
     }
     
 }

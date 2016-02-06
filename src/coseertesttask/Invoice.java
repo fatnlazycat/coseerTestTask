@@ -15,7 +15,7 @@ import java.util.Map;
 public class Invoice {
     private Date date;
     private Customer customer;
-    private Map<Product, Integer> order;
+    private Map<Product, Double> order;
 
     public Date getDate() {
         return date;
@@ -33,11 +33,11 @@ public class Invoice {
         this.customer = customer;
     }
 
-    public Map<Product, Integer> getOrder() {
+    public Map<Product, Double> getOrder() {
         return order;
     }
 
-    public void setOrder(Map<Product, Integer> order) {
+    public void setOrder(Map<Product, Double> order) {
         this.order = order;
     }
 }
